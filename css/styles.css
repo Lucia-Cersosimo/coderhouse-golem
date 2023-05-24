@@ -1,0 +1,485 @@
+/* VARIABLES REUTILIZABLES */
+
+:root {
+  --primary: #2b4864;
+  --secondary: #f5be29;
+  --tertiary: #643816;
+  --light: #ffffff;
+  --dark: #000000;
+  --dosis-font: "Dosis", sans-serif;
+  --source-font: "Source Sans Pro", sans-serif;
+}
+
+.bglight {
+  background-color: var(--light);
+}
+
+.bgprimary {
+  background-color: var(--primary);
+}
+
+.fontlight {
+  color: var(--light);
+}
+
+.fontprimary {
+  color: var(--primary);
+}
+/* HEADER */
+.header-nav-fix {
+  background-color: var(--primary);
+}
+
+.logo-escrito-fix {
+  width: 200px;
+}
+
+.nav-links-fix {
+  color: var(--light);
+  font-family: var(--source-font);
+  transition: ease-in;
+}
+
+.nav-links-fix:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.socialnet {
+  margin-right: 5px;
+  width: 20px;
+  align-items: baseline;
+}
+
+.icon-social-fix {
+  color: var(--light);
+}
+
+.icon-social-fix:hover {
+  color: var(--secondary);
+}
+
+.logo-fix {
+  width: 150px;
+  margin-bottom: 15px;
+}
+/* FIN HEADER */
+/* INDEX FIX */
+
+h1 {
+  font-family: var(--dosis-font);
+  font-weight: bold;
+  color: var(--primary);
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--dosis-font);
+  font-weight: lighter;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.titulo-index-fix {
+  margin-top: 30px;
+  background-color: var(--light);
+}
+
+.tit-fix {
+  font-family: var(--dosis-font);
+  color: var(--primary);
+  text-align: center;
+}
+.carousel-index-fix {
+  background-color: var(--primary);
+}
+
+.presentacion-index-fix {
+  font-family: var(--dosis-font);
+  font-weight: bold;
+  color: var(--primary);
+  text-align: center;
+  font-size: 20px;
+}
+
+.orari-indirizzo-fix {
+  background-image: url(../img/trovacii.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.orari-index-fix {
+  font-family: var(--dosis-font);
+  font-weight: bold;
+  font-size: larger;
+  color: var(--light);
+  justify-content: center;
+}
+
+.button-fix {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: var(--light);
+  z-index: 1;
+  background: var(--light);
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+
+.button-fix::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 15px;
+  background-color: var(--secondary);
+  z-index: -1;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+
+.button-fix:hover {
+  color: #e8e8e8;
+}
+
+.button-fix:hover::before {
+  width: 100%;
+}
+
+.button-link-fix {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.google-map-fix {
+  width: 600px;
+  height: 350px;
+}
+
+@media (max-width: 760px) {
+  .google-map-fix {
+    width: 400px;
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .google-map-fix {
+    width: 250px;
+    height: 100px;
+    padding-left: 20px;
+  }
+}
+
+/* FIN INDEX */
+/* CHI SIAMO  */
+
+.chi-siamo-fix {
+  font-family: var(--dosis-font);
+  text-align: left;
+  color: var(--dark);
+  font-size: 30px;
+}
+
+@media (max-width: 760px) {
+  .chi-siamo-fix {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .chi-siamo-fix {
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+.chi-siamo-video-fix {
+  background-color: var(--secondary);
+}
+
+.covid-fix {
+  font-family: var(--dosis-font);
+  color: var(--dark);
+  text-align: justify;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+@media (max-width: 760px) {
+  .covid-fix {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .covid-fix {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .i-video-fix {
+    width: 34rem;
+  }
+}
+
+.case-fix {
+  font-family: var(--dosis-font);
+  font-weight: bold;
+}
+
+.case-logo {
+  text-align: center;
+  font-family: var(--source-font);
+  font-weight: bolder;
+  color: var(--light);
+  background-color: var(--primary);
+}
+/* FIN CHI SIAMO */
+
+/* EVENTI */
+
+.eventi-info {
+  background-color: var(--primary);
+  color: var(--light);
+  font-family: var(--source-font);
+  font-size: large;
+  text-align: center;
+}
+.prenota-eventi-fix {
+  text-decoration: none;
+  color: var(--light);
+  transition: ease-in;
+}
+
+.prenota-eventi-fix:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.prenota-eventi-fix:visited {
+  color: var(--primary);
+}
+
+.nome-eventi {
+  font-size: 20px;
+  color: var(--secondary);
+  font-weight: bold;
+  font-family: var(--source-font);
+  text-align: center;
+}
+
+.data-eventi {
+  font-size: 1em;
+  color: var(--dark);
+  font-weight: bold;
+  font-family: var(--source-font);
+  text-align: center;
+}
+
+.link-prenota {
+  text-decoration: none;
+  color: var(--light);
+  transition: ease-in;
+  font-family: var(--source-font);
+  font-weight: bolder;
+}
+
+.link-prenota:hover {
+  color: var(--secondary);
+  text-decoration: underline;
+}
+
+.link-prenota:visited {
+  color: var(--light);
+}
+
+.card {
+  margin-top: 10px;
+}
+/* FIN DI EVENTI */
+/* GRUPPO DI LETTURA */
+.gruppo-fix {
+  background-color: var(--secondary);
+}
+.data-gruppo-fix {
+  text-align: left;
+  color: var(--light);
+  font-size: 34px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+.libro-desc-fix {
+  text-align: left;
+  font-family: var(--dosis-font);
+  font-size: 30px;
+}
+
+.ima-gruppo-fix {
+  width: 75%;
+}
+
+.fb-gruppo {
+  text-decoration: none;
+  font-size: 34px;
+  color: var(--light);
+  transition: ease-in;
+}
+
+.fb-gruppo:hover {
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+@media (max-width: 760px) {
+  .ima-gruppo-fix {
+    width: 75%;
+  }
+  .data-gruppo-fix {
+    text-align: center;
+    font-size: 28px;
+  }
+  .libro-desc-fix {
+    text-align: center;
+    font-size: 24px;
+  }
+  .fb-gruppo {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ima-gruppo-fix {
+    width: 50%;
+  }
+  .data-gruppo-fix {
+    text-align: center;
+    font-size: 24px;
+  }
+  .libro-desc-fix {
+    text-align: center;
+    font-size: 20px;
+  }
+  .fb-gruppo {
+    font-size: 24px;
+  }
+}
+
+.funziona-gruppo-fix {
+  text-align: left;
+  font-family: var(--source-font);
+  color: var(--secondary);
+  font-weight: bolder;
+}
+
+.regole-gruppo {
+  list-style: none;
+  font-size: 20px;
+  text-align: left;
+  color: var(--light);
+  font-family: var(--dosis-font);
+}
+
+.news-tit-fix {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.news-link-fix {
+  text-decoration: none;
+  color: var(--secondary);
+}
+/* FIN GRUPPO DI LETTURA */
+
+/* CONTATTACI */
+
+.data-cont {
+  background-color: var(--primary);
+}
+
+.contatti-fix {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: var(--source-font);
+  color: var(--light);
+  font-size: 24px;
+}
+.contatti-links {
+  text-decoration: none;
+  color: var(--light);
+  transition: ease-in;
+}
+.contatti-links:hover {
+  color: var(--secondary);
+}
+
+.map-conta-fix {
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .conta-ima-fix {
+    width: 300px;
+  }
+  .contatti-fix {
+    font-size: 20px;
+  }
+  .map-conta-fix {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conta-ima-fix {
+    width: 200px;
+  }
+  .contatti-fix {
+    font-size: 16px;
+  }
+  .mapa-conta-fix {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+.form-fix {
+  background-color: var(--secondary);
+}
+label {
+  color: var(--primary);
+  font-family: var(--source-font);
+  font-size: large;
+  font-weight: bold;
+}
+
+/* FIN CONTATTACI */
+/* FOOTER */
+.footer-fix {
+  background-color: var(--primary);
+  margin-top: 15px;
+}
+.footer-items-fix {
+  color: var(--light);
+  font-family: var(--source-font);
+  text-align: center;
+  font-weight: lighter;
+}
+/* FIN FOOTER */
