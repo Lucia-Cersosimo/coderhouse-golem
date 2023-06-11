@@ -1,0 +1,68 @@
+@use "assets/variables" as v;
+
+.chi-siamo-fix {
+  font-family: v.$fontdosis;
+  text-align: left;
+  color: v.$secondary;
+  font-size: v.$textsize2;
+}
+
+@media (max-width: 760px) {
+  .chi-siamo-fix {
+    font-size: v.$textsize1;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .chi-siamo-fix {
+    font-size: v.$textsize3;
+    text-align: center;
+  }
+}
+
+.chi-siamo-video-fix {
+  background-color: v.$secondary;
+}
+
+.covid-fix {
+  font-family: v.$fontdosis;
+  color: v.$dark;
+  text-align: justify;
+  padding: 10px;
+  margin-left: 20px;
+  font-size: v.$textsize1;
+}
+
+@media (max-width: 760px) {
+  .covid-fix {
+    font-size: v.$textsize3;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .covid-fix {
+    font-size: v.$textsize3;
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .i-video-fix {
+    width: 34rem;
+  }
+}
+
+.case-fix {
+  font-family: v.$fontdosis;
+  font-weight: bold;
+}
+
+.case-logo {
+  text-align: center;
+  font-family: v.$fontsource;
+  font-weight: bolder;
+  color: v.$light;
+  background-color: v.$primary;
+}

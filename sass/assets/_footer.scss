@@ -1,0 +1,12 @@
+@use "_variables" as v;
+
+.footer-fix {
+  background-color: v.$primary;
+  margin-top: 15px;
+}
+.footer-items-fix {
+  color: v.$light;
+  font-family: v.$fontsource;
+  text-align: center;
+  font-weight: lighter;
+}

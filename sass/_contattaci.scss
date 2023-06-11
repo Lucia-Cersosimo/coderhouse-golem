@@ -1,0 +1,64 @@
+@use "assets/variables" as v;
+
+.data-cont {
+  background-color: v.$primary;
+}
+
+.contatti-fix {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  font-family: v.$fontsource;
+  color: v.$light;
+  font-size: 24px;
+}
+.contatti-links {
+  text-decoration: none;
+  color: v.$light;
+  transition: ease-in;
+
+  &:hover {
+    color: v.$secondary;
+  }
+}
+
+.map-conta-fix {
+  width: 100%;
+}
+
+@media (max-width: 760px) {
+  .conta-ima-fix {
+    width: 300px;
+  }
+  .contatti-fix {
+    font-size: v.$textsize1;
+  }
+  .map-conta-fix {
+    width: 350px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conta-ima-fix {
+    width: 200px;
+  }
+  .contatti-fix {
+    font-size: 16px;
+  }
+  .mapa-conta-fix {
+    width: 200px;
+    height: 100px;
+  }
+}
+
+.form-fix {
+  background-color: v.$secondary;
+}
+label {
+  color: v.$primary;
+  font-family: v.$fontsource;
+  font-size: large;
+  font-weight: bold;
+}

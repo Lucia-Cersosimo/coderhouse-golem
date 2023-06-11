@@ -1,0 +1,88 @@
+@use "assets/variables.scss" as v;
+
+.carousel-index-fix {
+  background-color: v.$primary;
+}
+
+.presentacion-index-fix {
+  font-family: v.$fontdosis;
+  font-weight: bold;
+  color: v.$primary;
+  text-align: center;
+  font-size: v.$textsize1;
+}
+
+.orari-indirizzo-fix {
+  background-image: url(../img/trovacii.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.orari-index-fix {
+  font-family: v.$fontdosis;
+  font-weight: bold;
+  font-size: larger;
+  color: v.$light;
+  justify-content: center;
+}
+
+.button-fix {
+  padding: 15px 25px;
+  border: unset;
+  border-radius: 15px;
+  color: v.$light;
+  z-index: 1;
+  background: v.$light;
+  position: relative;
+  font-weight: 1000;
+  font-size: 17px;
+  -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: v.$secondary;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
+    transition: all 250ms;
+  }
+
+  &:hover {
+    color: #e8e8e8;
+  }
+
+  &:hover::before {
+    width: 100%;
+  }
+}
+
+.button-link-fix {
+  color: v.$primary;
+  text-decoration: none;
+}
+
+.google-map-fix {
+  width: 600px;
+  height: 350px;
+
+  @media (max-width: 760px) {
+    width: 400px;
+    height: 200px;
+  }
+
+  @media (max-width: 480px) {
+    width: 250px;
+    height: 100px;
+    padding-left: 20px;
+  }
+}

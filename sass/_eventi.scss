@@ -1,0 +1,70 @@
+@use "assets/variables" as v;
+
+.eventi-info {
+  background-color: v.$primary;
+  color: v.$light;
+  font-family: v.$fontsource;
+  font-size: v.$textsize3;
+  text-align: center;
+}
+.prenota-eventi-fix {
+  text-decoration: none;
+  color: v.$light;
+  transition: ease-in;
+
+  &:hover {
+    color: v.$primary;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: v.$primary;
+  }
+}
+
+.nome-eventi {
+  font-size: v.$textsize1;
+  color: v.$secondary;
+  font-weight: bold;
+  font-family: v.$fontsource;
+  text-align: center;
+}
+
+.data-eventi {
+  font-size: 1em;
+  color: v.$dark;
+  font-weight: bold;
+  font-family: v.$fontsource;
+  text-align: center;
+}
+
+.link-prenota {
+  text-decoration: none;
+  color: v.$light;
+  transition: ease-in;
+  font-family: v.$fontsource;
+  font-weight: bolder;
+
+  &:hover {
+    color: v.$secondary;
+    text-decoration: underline;
+  }
+
+  &:visited {
+    color: v.$light;
+  }
+}
+
+.card {
+  margin-top: 10px;
+}
+
+.bgprimary {
+  background-color: v.$primary;
+}
+
+@media (max-width: 480px) {
+  .card-group {
+    padding-left: 42px;
+  }
+}

@@ -1,0 +1,15 @@
+@use "_variables" as v;
+
+h1 {
+  font-family: v.$fontdosis;
+  font-weight: bold;
+  color: v.$primary;
+  text-align: center;
+}
+
+h2 {
+  font-family: v.$fontdosis;
+  font-weight: lighter;
+  color: v.$secondary;
+  text-align: center;
+}

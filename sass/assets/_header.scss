@@ -1,0 +1,39 @@
+@use "_variables" as v;
+
+.header-nav-fix {
+  background-color: v.$primary;
+}
+
+.logo-escrito-fix {
+  width: 200px;
+}
+
+.nav-links-fix {
+  color: v.$light;
+  font-family: v.$fontsource;
+  transition: ease-in;
+
+  &:hover {
+    color: v.$secondary;
+    text-decoration: underline;
+  }
+}
+
+.socialnet {
+  margin-right: 5px;
+  width: 20px;
+  align-items: baseline;
+}
+
+.icon-social-fix {
+  color: v.$light;
+
+  &:hover {
+    color: v.$secondary;
+  }
+}
+
+.logo-fix {
+  width: 150px;
+  margin-bottom: 15px;
+}
