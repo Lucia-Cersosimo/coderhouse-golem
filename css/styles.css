@@ -1,103 +1,11 @@
-/* VARIABLES REUTILIZABLES */
-
-:root {
-  --primary: #2b4864;
-  --secondary: #f5be29;
-  --tertiary: #643816;
-  --light: #ffffff;
-  --dark: #000000;
-  --dosis-font: "Dosis", sans-serif;
-  --source-font: "Source Sans Pro", sans-serif;
-}
-
-.bglight {
-  background-color: var(--light);
-}
-
-.bgprimary {
-  background-color: var(--primary);
-}
-
-.fontlight {
-  color: var(--light);
-}
-
-.fontprimary {
-  color: var(--primary);
-}
-/* HEADER */
-.header-nav-fix {
-  background-color: var(--primary);
-}
-
-.logo-escrito-fix {
-  width: 200px;
-}
-
-.nav-links-fix {
-  color: var(--light);
-  font-family: var(--source-font);
-  transition: ease-in;
-}
-
-.nav-links-fix:hover {
-  color: var(--secondary);
-  text-decoration: underline;
-}
-
-.socialnet {
-  margin-right: 5px;
-  width: 20px;
-  align-items: baseline;
-}
-
-.icon-social-fix {
-  color: var(--light);
-}
-
-.icon-social-fix:hover {
-  color: var(--secondary);
-}
-
-.logo-fix {
-  width: 150px;
-  margin-bottom: 15px;
-}
-/* FIN HEADER */
-/* INDEX FIX */
-
-h1 {
-  font-family: var(--dosis-font);
-  font-weight: bold;
-  color: var(--primary);
-  text-align: center;
-}
-
-h2 {
-  font-family: var(--dosis-font);
-  font-weight: lighter;
-  color: var(--secondary);
-  text-align: center;
-}
-
-.titulo-index-fix {
-  margin-top: 30px;
-  background-color: var(--light);
-}
-
-.tit-fix {
-  font-family: var(--dosis-font);
-  color: var(--primary);
-  text-align: center;
-}
 .carousel-index-fix {
-  background-color: var(--primary);
+  background-color: #2b4864;
 }
 
 .presentacion-index-fix {
-  font-family: var(--dosis-font);
+  font-family: "Dosis", sans-serif;
   font-weight: bold;
-  color: var(--primary);
+  color: #2b4864;
   text-align: center;
   font-size: 20px;
 }
@@ -110,10 +18,10 @@ h2 {
 }
 
 .orari-index-fix {
-  font-family: var(--dosis-font);
+  font-family: "Dosis", sans-serif;
   font-weight: bold;
   font-size: larger;
-  color: var(--light);
+  color: #ffffff;
   justify-content: center;
 }
 
@@ -121,9 +29,9 @@ h2 {
   padding: 15px 25px;
   border: unset;
   border-radius: 15px;
-  color: var(--light);
+  color: #ffffff;
   z-index: 1;
-  background: var(--light);
+  background: #ffffff;
   position: relative;
   font-weight: 1000;
   font-size: 17px;
@@ -132,8 +40,7 @@ h2 {
   transition: all 250ms;
   overflow: hidden;
 }
-
-.button-fix::before {
+.button-fix:before {
   content: "";
   position: absolute;
   top: 0;
@@ -141,23 +48,21 @@ h2 {
   height: 100%;
   width: 0;
   border-radius: 15px;
-  background-color: var(--secondary);
+  background-color: #f5be29;
   z-index: -1;
   -webkit-box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   box-shadow: 4px 8px 19px -3px rgba(0, 0, 0, 0.27);
   transition: all 250ms;
 }
-
 .button-fix:hover {
   color: #e8e8e8;
 }
-
 .button-fix:hover::before {
   width: 100%;
 }
 
 .button-link-fix {
-  color: var(--primary);
+  color: #2b4864;
   text-decoration: none;
 }
 
@@ -165,7 +70,6 @@ h2 {
   width: 600px;
   height: 350px;
 }
-
 @media (max-width: 760px) {
   .google-map-fix {
     width: 400px;
@@ -180,13 +84,10 @@ h2 {
   }
 }
 
-/* FIN INDEX */
-/* CHI SIAMO  */
-
 .chi-siamo-fix {
-  font-family: var(--dosis-font);
+  font-family: "Dosis", sans-serif;
   text-align: left;
-  color: var(--dark);
+  color: #f5be29;
   font-size: 30px;
 }
 
@@ -196,21 +97,19 @@ h2 {
     text-align: center;
   }
 }
-
 @media (max-width: 480px) {
   .chi-siamo-fix {
     font-size: 15px;
     text-align: center;
   }
 }
-
 .chi-siamo-video-fix {
-  background-color: var(--secondary);
+  background-color: #f5be29;
 }
 
 .covid-fix {
-  font-family: var(--dosis-font);
-  color: var(--dark);
+  font-family: "Dosis", sans-serif;
+  color: #000000;
   text-align: justify;
   padding: 10px;
   margin-left: 20px;
@@ -223,109 +122,110 @@ h2 {
     text-align: left;
   }
 }
-
 @media (max-width: 480px) {
   .covid-fix {
     font-size: 15px;
     text-align: left;
   }
 }
-
 @media (min-width: 1200px) {
   .i-video-fix {
     width: 34rem;
   }
 }
-
 .case-fix {
-  font-family: var(--dosis-font);
+  font-family: "Dosis", sans-serif;
   font-weight: bold;
 }
 
 .case-logo {
   text-align: center;
-  font-family: var(--source-font);
+  font-family: "Source Sans 3", sans-serif;
   font-weight: bolder;
-  color: var(--light);
-  background-color: var(--primary);
+  color: #ffffff;
+  background-color: #2b4864;
 }
-/* FIN CHI SIAMO */
-
-/* EVENTI */
 
 .eventi-info {
-  background-color: var(--primary);
-  color: var(--light);
-  font-family: var(--source-font);
-  font-size: large;
+  background-color: #2b4864;
+  color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 15px;
   text-align: center;
 }
+
 .prenota-eventi-fix {
   text-decoration: none;
-  color: var(--light);
+  color: #ffffff;
   transition: ease-in;
 }
-
 .prenota-eventi-fix:hover {
-  color: var(--primary);
+  color: #2b4864;
   text-decoration: underline;
 }
-
 .prenota-eventi-fix:visited {
-  color: var(--primary);
+  color: #2b4864;
 }
 
 .nome-eventi {
   font-size: 20px;
-  color: var(--secondary);
+  color: #f5be29;
   font-weight: bold;
-  font-family: var(--source-font);
+  font-family: "Source Sans 3", sans-serif;
   text-align: center;
 }
 
 .data-eventi {
   font-size: 1em;
-  color: var(--dark);
+  color: #000000;
   font-weight: bold;
-  font-family: var(--source-font);
+  font-family: "Source Sans 3", sans-serif;
   text-align: center;
 }
 
 .link-prenota {
   text-decoration: none;
-  color: var(--light);
+  color: #ffffff;
   transition: ease-in;
-  font-family: var(--source-font);
+  font-family: "Source Sans 3", sans-serif;
   font-weight: bolder;
 }
-
 .link-prenota:hover {
-  color: var(--secondary);
+  color: #f5be29;
   text-decoration: underline;
 }
-
 .link-prenota:visited {
-  color: var(--light);
+  color: #ffffff;
 }
 
 .card {
   margin-top: 10px;
 }
-/* FIN DI EVENTI */
-/* GRUPPO DI LETTURA */
-.gruppo-fix {
-  background-color: var(--secondary);
+
+.bgprimary {
+  background-color: #2b4864;
 }
+
+@media (max-width: 480px) {
+  .card-group {
+    padding-left: 42px;
+  }
+}
+.gruppo-fix {
+  background-color: #f5be29;
+}
+
 .data-gruppo-fix {
   text-align: left;
-  color: var(--light);
+  color: #ffffff;
   font-size: 34px;
   font-weight: bold;
   padding-top: 30px;
 }
+
 .libro-desc-fix {
   text-align: left;
-  font-family: var(--dosis-font);
+  font-family: "Dosis", sans-serif;
   font-size: 30px;
 }
 
@@ -336,12 +236,11 @@ h2 {
 .fb-gruppo {
   text-decoration: none;
   font-size: 34px;
-  color: var(--light);
+  color: #ffffff;
   transition: ease-in;
 }
-
 .fb-gruppo:hover {
-  color: var(--primary);
+  color: #2b4864;
   text-decoration: underline;
 }
 
@@ -361,7 +260,6 @@ h2 {
     font-size: 28px;
   }
 }
-
 @media (max-width: 480px) {
   .ima-gruppo-fix {
     width: 50%;
@@ -378,11 +276,10 @@ h2 {
     font-size: 24px;
   }
 }
-
 .funziona-gruppo-fix {
   text-align: left;
-  font-family: var(--source-font);
-  color: var(--secondary);
+  font-family: "Source Sans 3", sans-serif;
+  color: #f5be29;
   font-weight: bolder;
 }
 
@@ -390,8 +287,8 @@ h2 {
   list-style: none;
   font-size: 20px;
   text-align: left;
-  color: var(--light);
-  font-family: var(--dosis-font);
+  color: #ffffff;
+  font-family: "Dosis", sans-serif;
 }
 
 .news-tit-fix {
@@ -402,14 +299,11 @@ h2 {
 
 .news-link-fix {
   text-decoration: none;
-  color: var(--secondary);
+  color: #f5be29;
 }
-/* FIN GRUPPO DI LETTURA */
-
-/* CONTATTACI */
 
 .data-cont {
-  background-color: var(--primary);
+  background-color: #2b4864;
 }
 
 .contatti-fix {
@@ -417,17 +311,18 @@ h2 {
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  font-family: var(--source-font);
-  color: var(--light);
+  font-family: "Source Sans 3", sans-serif;
+  color: #ffffff;
   font-size: 24px;
 }
+
 .contatti-links {
   text-decoration: none;
-  color: var(--light);
+  color: #ffffff;
   transition: ease-in;
 }
 .contatti-links:hover {
-  color: var(--secondary);
+  color: #f5be29;
 }
 
 .map-conta-fix {
@@ -446,7 +341,6 @@ h2 {
     height: 250px;
   }
 }
-
 @media (max-width: 480px) {
   .conta-ima-fix {
     width: 200px;
@@ -459,27 +353,77 @@ h2 {
     height: 100px;
   }
 }
-
 .form-fix {
-  background-color: var(--secondary);
+  background-color: #f5be29;
 }
+
 label {
-  color: var(--primary);
-  font-family: var(--source-font);
+  color: #2b4864;
+  font-family: "Source Sans 3", sans-serif;
   font-size: large;
   font-weight: bold;
 }
 
-/* FIN CONTATTACI */
-/* FOOTER */
 .footer-fix {
-  background-color: var(--primary);
+  background-color: #2b4864;
   margin-top: 15px;
 }
+
 .footer-items-fix {
-  color: var(--light);
-  font-family: var(--source-font);
+  color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
   text-align: center;
   font-weight: lighter;
 }
-/* FIN FOOTER */
+
+.header-nav-fix {
+  background-color: #2b4864;
+}
+
+.logo-escrito-fix {
+  width: 200px;
+}
+
+.nav-links-fix {
+  color: #ffffff;
+  font-family: "Source Sans 3", sans-serif;
+  transition: ease-in;
+}
+.nav-links-fix:hover {
+  color: #f5be29;
+  text-decoration: underline;
+}
+
+.socialnet {
+  margin-right: 5px;
+  width: 20px;
+  align-items: baseline;
+}
+
+.icon-social-fix {
+  color: #ffffff;
+}
+.icon-social-fix:hover {
+  color: #f5be29;
+}
+
+.logo-fix {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-weight: bold;
+  color: #2b4864;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Dosis", sans-serif;
+  font-weight: lighter;
+  color: #f5be29;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */
